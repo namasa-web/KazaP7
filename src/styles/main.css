@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'Header';
+@import 'Banner';
+@import 'Home';
+@import 'Collapse';
+@import 'Gallery';
+@import 'Accomodation';
+@import 'About';
+@import 'NotFound';
+@import 'Footer';
+@import 'NavBar';
+@import 'Card';
