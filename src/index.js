@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import App from './App';
+import ReactDOM from 'react-dom';
+import './styles/main.scss'; // Importez vos fichiers SCSS ici
 import reportWebVitals from './reportWebVitals';
+import Routes from './Routes'; // Importez le composant Routes
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Routes /> {/* Utilisez le composant Routes à la place de App */}
   </React.StrictMode>
 );
 
