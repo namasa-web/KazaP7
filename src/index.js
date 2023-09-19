@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Routes from './Routes';
 import './styles/main.scss'; // Importez vos fichiers SCSS ici
 import reportWebVitals from './reportWebVitals';
-import Routes from './Routes'; // Importez le composant Routes
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

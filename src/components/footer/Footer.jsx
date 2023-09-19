@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from "../images/LogoNoir.webp"
-import "../styles/main.scss"
+import logo from "../../images/LogoNoir.webp"
+
 
 function Footer() {
     return (
