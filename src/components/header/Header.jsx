@@ -1,16 +1,17 @@
 import NavBar from "../navbar/NavBar";
 import Logo from "../../images/logo.png"
+import "../../styles/main.scss";
+
 
 function Header () {
 return (
    
-      <div className="header">
+    <div className="header">
+
         <img src={Logo} alt="Logo de Kasa" />
 		<NavBar />
-        </div>
-       
-   
-  );
+    </div>
+    );
 }
 
 export default Header;

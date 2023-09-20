@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 209px;
+    background-color: $footer-color;
+    color: $tertiary-color;
+    font-size: 18px;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+.footer img {
+    margin-top: 50px; /* Espace en haut du logo */
+    margin-bottom: 20px; /* Espace en bas du logo */
+}

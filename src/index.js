@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './Routes';
-import './styles/main.scss'; // Importez vos fichiers SCSS ici
+import './styles/main.scss'; 
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Routes /> {/* Utilisez le composant Routes à la place de App */}
+    <Routes /> 
   </React.StrictMode>
 );
 
