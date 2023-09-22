@@ -2,7 +2,7 @@
   /* Positionne la barre de navigation en haut à droite de la fenêtre */
   position: absolute;
   top: 15px;
-  right: 60px;
+  right: 50px;
   /* Lui donne une largeur minimale pour éviter que les éléments ne se chevauchent lorsque la fenêtre est réduite */
   min-width: 200px;
   /* Affiche les éléments de la barre de navigation en ligne */
@@ -14,28 +14,13 @@
   /* Supprime la marge et le rembourrage par défaut des listes */
   padding: 0;
   /* taille du texte a pros et acceuil */
-  font-size: 20px; 
+  font-size: 18px; 
   /* Ajoute un espacement horizontal entre les éléments */
-  gap: 60px; /* Ajustez l'espacement horizontal selon vos préférences */
-  
-}
-
-.nav_link {
-  /* Centre les éléments de la barre de navigation horizontalement */
-  display: flex;
- 
+  gap: 65px; /* Ajustez l'espacement horizontal selon vos préférences */
 }
 
 .nav_link a {
-  /* Supprime le trait sous les liens de navigation */
-  text-decoration: none;
-  /* Définit la couleur du texte à la couleur de la variable primary-color */
+ /* Définit la couleur du texte à la couleur de la variable primary-color */
   color: $primary-color;
-  /* Ajoute une transition en douceur lors du survol */
-  transition: color 0.3s ease;
 }
 
-.nav_link a:hover {
-  /* Change la couleur du texte en survolant */
-  color: $secondary-color;
-}

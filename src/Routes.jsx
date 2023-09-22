@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 
+
 // défini les routes, c'ette fonction est appelé dans index.js
 function Routes() {
     const router = createBrowserRouter([

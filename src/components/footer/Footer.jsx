@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../images/LogoNoir.webp"
+import logo from "../../assets/LogoNoir.webp"
 
 
 function Footer() {

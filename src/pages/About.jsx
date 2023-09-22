@@ -1,13 +1,11 @@
 import React from 'react';
-
+import Banner from '../components/banner/banner';
+import ImageAbout from '../assets/about_cover.png';
 
 function About() {
   return (
-    <div className="home-page">
-        <div className="page-about">
-            <h1>About</h1>
-            <p> Vivez l'expérience comme si vous y étiez</p>
-        </div>
+    <div className="page_about">
+      <Banner backgroundImage={ImageAbout} />
     </div>
   );
 }
