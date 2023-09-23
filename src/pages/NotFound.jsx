@@ -1,25 +1,14 @@
+import { Link } from "react-router-dom"
+
 
 function NotFound() {
-  return (
-    <div className="home-page">
-   
-
-      <header className="header">
-        <div className="texte">
-            <h1>Chez vous, partout et ailleurs</h1>
-            <p> Vivez l'expérience comme si vous y étiez</p>
-        </div>
-        <div className="buttons">
-          <button>Accueil</button>
-          <button>A Propos</button>
-        </div>
-      </header>
-
-          
-
-     
-    </div>
-  );
+    return (
+            <div className='not_found'>
+              <span>404</span>
+              <h4>Oups! La page que vous demandez n'existe pas.</h4>
+              <p><Link to="/">Retourner sur la page d’accueil</Link></p>
+            </div>
+           )
 }
 
-export default NotFound;
+export default NotFound
