@@ -1,6 +1,5 @@
 import NavBar from "../navbar/NavBar";
 import Logo from "../../assets/logo.png"
-import "../../styles/main.scss";
 
 
 function Header () {

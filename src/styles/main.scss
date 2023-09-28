@@ -5,6 +5,17 @@
 @import './sass/Banner';
 @import './sass/About';
 @import './sass/NotFound';
+@import './sass/Collapse';
+@import './sass/Card';
+@import './sass/Carousel';
+@import './sass/Contener';
+
+// main.scss
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 
 

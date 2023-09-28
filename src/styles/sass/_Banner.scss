@@ -1,8 +1,8 @@
 /* Styles pour le conteneur de la bannière */
 .banner {
   position: relative;
-  height: 150px;
-  border-radius: 25px; /* Ajoute des coins arrondis */
+  height: 209px;
+  border-radius: 15px; /* Ajoute des coins arrondis */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
 
 /* Styles pour le texte de la bannière */
 .banner h1 {
-  font-size: 40px;
+  font-size: 44px;
 }
 
 /* Si vous souhaitez ajouter un espacement entre le texte et le bord de la bannière */

@@ -1,8 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 .header {
   height: 68px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 @media screen and (max-width: 900px) {
   .header {
@@ -10,8 +11,8 @@
   }
 }
 .header img {
-  height: 100%;
-  margin-left: 60px;
+  height: 90%;
+  margin-left: 55px;
 }
 @media screen and (max-width: 700px) {
   .header img {
@@ -22,7 +23,7 @@
 .nav_link {
   /* Positionne la barre de navigation en haut à droite de la fenêtre */
   position: absolute;
-  top: 15px;
+  top: 25px;
   right: 60px;
   /* Lui donne une largeur minimale pour éviter que les éléments ne se chevauchent lorsque la fenêtre est réduite */
   min-width: 200px;
@@ -34,45 +35,411 @@
   list-style: none;
   /* Supprime la marge et le rembourrage par défaut des listes */
   padding: 0;
-  /* taille du texte a pros et acceuil */
+  /* taille du texte a propos et acceuil */
   font-size: 20px;
   /* Ajoute un espacement horizontal entre les éléments */
-  gap: 60px; /* Ajustez l'espacement horizontal selon vos préférences */
-}
-
-.nav_link {
-  /* Centre les éléments de la barre de navigation horizontalement */
-  display: flex;
+  gap: 100px; /* Ajustez l'espacement horizontal selon vos préférences */
 }
 
 .nav_link a {
-  /* Supprime le trait sous les liens de navigation */
-  text-decoration: none;
   /* Définit la couleur du texte à la couleur de la variable primary-color */
   color: #ff6060;
-  /* Ajoute une transition en douceur lors du survol */
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
-.nav_link a:hover {
-  /* Change la couleur du texte en survolant */
-  color: #F6F6F6;
+.nav_link a:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: #ff6060;
 }
 
+/* Styles pour le FOOTER */
 .footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 209px;
+  height: 200px; /* Ajuste la hauteur automatique pour s'adapter au contenu */
+  padding: 0px; /* Ajoute une certaine marge intérieure pour l'espace */
   background-color: #000000;
   color: #ffffff;
-  font-size: 18px;
+  text-align: center;
+}
+
+/* Styles pour le logo */
+.footer img {
+  width: 130px; /* Ajuste la largeur du logo selon vos préférences */
+  /* Garantit que l'aspect ratio est maintenu */
+  margin-bottom: center;
+}
+
+/* Styles pour le texte */
+.text_footer {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px; /* Ajoute une petite marge en haut pour l'espace */
+  max-width: 100%; /* Limite la largeur du texte pour un aspect allongé */
+}
+
+/* Styles pour le conteneur de la bannière */
+.banner {
+  position: relative;
+  height: 209px;
+  border-radius: 15px; /* Ajoute des coins arrondis */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 50px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center; /* Pour couvrir tout le conteneur */
+  color: #ffffff; /* Couleur du texte */
   text-align: center; /* Centre le texte horizontalement */
 }
 
-.footer img {
-  margin-top: 50px; /* Espace en haut du logo */
-  margin-bottom: 20px; /* Espace en bas du logo */
+/* Styles pour le texte de la bannière */
+.banner h1 {
+  font-size: 44px;
+}
+
+/* Si vous souhaitez ajouter un espacement entre le texte et le bord de la bannière */
+.banner h1 {
+  margin: 0 20px;
+}
+
+.collapse_about {
+  display: flex;
+  color: #ff6060;
+  flex-direction: column;
+  padding-inline: 108px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+.page_about {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.not_found {
+  color: #ff6060;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2630px; /* Ajout de marge inférieure pour éviter le chevauchement avec le pied de page */
+}
+
+.not_found span {
+  font-size: 288px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; /* Ajout de la propriété pour le texte en gras */
+}
+
+.not_found h4 {
+  font-size: 36px;
+  margin: 30px 0;
+}
+
+.not_found p {
+  padding-top: 50px;
+}
+
+.not_found a {
+  color: #ff6060;
+}
+
+@media (min-width: 401px) and (max-width: 550px) {
+  .not_found span {
+    font-size: 180px;
+  }
+}
+@media (max-width: 400px) {
+  .not_found {
+    margin: auto 0;
+  }
+  .not_found span {
+    font-size: 96px;
+  }
+  .not_found h4 {
+    font-size: 18px;
+  }
+  .not_found a {
+    font-size: 14px;
+  }
+}
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.visible.collapse ul {
+  color: #ff6060;
+  padding: 36px 27px 19px 18px;
+  margin: 0;
+  text-align: justify;
+  list-style-type: none;
+}
+
+.collapse__header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 28px;
+  background-color: #ff6060;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapse__header span {
+  padding-right: auto;
+}
+
+/* affiche le contenu */
+.visible {
+  display: block;
+  background-color: #F6F6F6;
+}
+
+/* cache le contenu */
+.hidden {
+  display: none;
+}
+
+.chevronValue img {
+  width: 25px;
+  height: 15px;
+}
+
+.visible.collapse {
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+  color: #ff6060;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(193, 191, 191);
+  z-index: -1; /* passe la zone de contenu sous la zone de titre*/
+}
+
+.equipement-content {
+  margin: 0;
+}
+
+.logement {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  margin-left: 50px;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.ficheLogement {
+  display: flex;
+  margin-top: 30px;
+}
+
+.ficheLogement h4 {
+  color: #ff6060;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.ficheLogement h1 {
+  color: #ff6060;
+  margin: 0;
+  font-size: 36px;
+}
+
+.div-tags {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  padding-bottom: 2px;
+  margin: 20px 20px 0 0;
+  height: 25px;
+  font-size: 14px;
+  background-color: #ff6060;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.div-etoiles {
+  display: flex;
+  gap: 10px;
+  color: #ff6060;
+  width: 167px;
+}
+
+.div-etoiles p {
+  display: flex;
+  text-align: right;
+  font-size: 18px;
+  width: 93px;
+  height: 52px;
+  align-items: center;
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+
+.div-etoiles img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-top: 15px;
+  box-shadow: 0px 0px 10px rgb(175, 136, 136);
+}
+
+.div-description {
+  width: 100%;
+}
+
+.stars {
+  display: flex;
+  font-size: 28px;
+  width: 120px;
+  gap: 5px;
+}
+
+.span1 {
+  color: #ff6060;
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+
+.span2 {
+  color: rgb(230, 224, 224);
+}
+
+.collapseLogement {
+  display: flex;
+  gap: 2rem;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  height: 415px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.carousel p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 340px;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+}
+
+.classImage {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 24px #b3b1b1;
+}
+
+.carousel button {
+  border: none;
+  background-color: transparent;
+  display: hidden;
+  color: #ffffff;
+}
+
+.classChevronGauche {
+  position: absolute;
+  content: "";
+  color: #ffffff;
+  inset: 0;
+  top: 40%;
+  cursor: pointer;
+  left: 20px;
+}
+
+.classChevronDroit {
+  position: absolute;
+  content: "";
+  inset: 0;
+  top: 40%;
+  cursor: pointer;
+  left: calc(100% - 70px);
+}
+
+.logements {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  justify-content: center;
+  background: #F6F6F6;
+  padding: 45px;
+  margin: 0px 50px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+}
+
+.logements a {
+  text-decoration: none;
+}
+
+/* card logement */
+.fiche-logement {
+  background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #8e3434);
+  border-radius: 7px;
+  transition: 0.3s;
+  min-width: 280px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.fiche-logement img {
+  width: 100%;
+  border-radius: 7px 7px 0px 0px;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.fiche-logement h3 {
+  display: flex;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0px 20px;
+  align-items: center;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.fiche-logement:hover {
+  box-shadow: 0px 0px 9px #473030;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=main.css.map */

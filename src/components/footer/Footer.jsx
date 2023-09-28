@@ -1,6 +1,4 @@
-
 import logo from "../../assets/LogoNoir.webp"
-
 
 function Footer() {
     return (
