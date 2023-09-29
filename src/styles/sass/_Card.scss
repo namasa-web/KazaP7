@@ -1,8 +1,8 @@
 .logement {
     display: flex;
     flex-direction: column;
-    width: 93%;
-    margin-left: 50px;
+    width: calc(100% - 200px); /* La largeur est calculée en soustrayant 200px (100px à gauche et 100px à droite) */
+    margin: 0 100px; /* Ajoute une marge de 100px à gauche et à droite */
     height: 100%;
     margin-bottom: 100px;
 }
@@ -57,7 +57,7 @@
     width: 93px;
     height: 52px;
     align-items: center;
-    text-shadow: 0px 0px 5px rgb(180, 166, 166);
+    text-shadow: 0px 0px 4px rgb(180, 166, 166);
 }
 
 .div-etoiles img {
@@ -65,7 +65,7 @@
     height: 64px;
     border-radius: 50%;
     margin-top: 15px;
-    box-shadow: 0px 0px 10px rgb(175, 136, 136);
+    box-shadow: 0px 0px 8px rgb(175, 136, 136);
 }
 
 .div-description {
