@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import chevronUp from "../../assets/ChevronUp.png"
 import chevronDown from "../../assets/ChevronDown.png"
 

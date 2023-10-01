@@ -1,14 +1,14 @@
-import React from 'react'
+
 import { Link } from "react-router-dom"
-import records from "../../Datas/logements.json"
+import logements from "../../Datas/logements.json"
 
 
-// composant qui permet de récupérer la liste des logements et de les afficher sous forme de card
-const Cards = () => {
+// permet de récupérer la liste des logements et de les afficher sous forme de card
+const Logements = () => {
     return (
         <div className="logements">
             {/* liste la base de données */}
-            {records.map((record) => {
+            {logements.map((record) => {
                 const { id, cover, title } = record;
 
                 // affiche la fiche logement sur la page d'accueil
@@ -25,4 +25,4 @@ const Cards = () => {
     )
 }
 
-export default Cards
+export default Logements
