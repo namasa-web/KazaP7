@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import ErrorPage from '../pages/NotFound';
-import Collapse from '../components/collapse/collapse';
-import Carousel from '../components/carousel/carousel';
+import Collapse from '../components/collapse/Collapse';
+import Carousel from '../components/carousel/Carousel';
 import logements from '../Datas/logements.json';
 
 const arrayStars = [1, 2, 3, 4, 5];

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Banner from '../components/banner/banner';
+import Banner from '../components/banner/Banner';
 import ImageAbout from '../assets/about_cover.png';
-import Collapse from '../components/collapse/collapse';
+import Collapse from '../components/collapse/Collapse';
 
 function About() {
   // contenu qui sera affiché dans les Collapse

@@ -1,5 +1,5 @@
 import React from 'react'; // Import de React
-import Banner from "../components/banner/banner"; // Import du composant de bannière
+import Banner from "../components/banner/Banner"; // Import du composant de bannière
 import ImageBanner from "../assets/backgroundHome.jpg"; // Import de l'image de fond
 import Logements from "../components/logements/Logements"; // Import du composant de logements
 
