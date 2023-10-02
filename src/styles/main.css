@@ -5,19 +5,9 @@
   max-width: 100%;
   margin: 20px auto;
 }
-@media screen and (max-width: 900px) {
-  .header {
-    height: 50px;
-  }
-}
 .header img {
-  height: 90%;
+  height: 100%;
   margin-left: 55px;
-}
-@media screen and (max-width: 700px) {
-  .header img {
-    height: 50px;
-  }
 }
 
 .nav_link {
@@ -36,9 +26,9 @@
   /* Supprime la marge et le rembourrage par défaut des listes */
   padding: 0;
   /* taille du texte a propos et acceuil */
-  font-size: 20px;
+  font-size: 18px;
   /* Ajoute un espacement horizontal entre les éléments */
-  gap: 100px; /* Ajustez l'espacement horizontal selon vos préférences */
+  gap: 50px; /* Ajustez l'espacement horizontal selon vos préférences */
 }
 
 .nav_link li {
@@ -96,27 +86,23 @@
 /* Styles pour le conteneur de la bannière */
 .banner {
   position: relative;
-  height: 209px;
-  border-radius: 15px; /* Ajoute des coins arrondis */
+  height: 200px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px 50px;
   padding: 20px;
   background-size: cover;
-  background-position: center; /* Pour couvrir tout le conteneur */
-  color: #ffffff; /* Couleur du texte */
-  text-align: center; /* Centre le texte horizontalement */
+  background-position: center;
+  filter: brightness(0.9);
 }
 
-/* Styles pour le texte de la bannière */
-.banner h1 {
-  font-size: 44px;
-}
-
-/* Si vous souhaitez ajouter un espacement entre le texte et le bord de la bannière */
-.banner h1 {
-  margin: 0 20px;
+h1.banner_title {
+  color: #ffffff;
+  font-size: 52px;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgb(79, 75, 75);
 }
 
 .collapse_about {
@@ -247,15 +233,40 @@
 .logement {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 200px); /* La largeur est calculée en soustrayant 200px (100px à gauche et 100px à droite) */
-  margin: 0 100px; /* Ajoute une marge de 100px à gauche et à droite */
+  margin-left: 50px;
+  margin-right: 50px;
   height: 100%;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .logement {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logement {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
 }
 
 .ficheLogement {
   display: flex;
   margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .ficheLogement {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ficheLogement {
+    align-items: center;
+  }
 }
 
 .ficheLogement h4 {
@@ -269,11 +280,23 @@
   margin: 0;
   font-size: 36px;
 }
+@media screen and (max-width: 600px) {
+  .ficheLogement h1 {
+    font-size: 24px;
+  }
+}
 
 .div-tags {
   display: flex;
   white-space: nowrap;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .div-tags {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .tags {
@@ -287,6 +310,12 @@
   background-color: #ff6060;
   color: #ffffff;
   border-radius: 7px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 600px) {
+  .tags {
+    font-size: 13px;
+  }
 }
 
 .div-etoiles {
@@ -294,6 +323,11 @@
   gap: 10px;
   color: #ff6060;
   width: 167px;
+}
+@media screen and (max-width: 600px) {
+  .div-etoiles {
+    width: auto;
+  }
 }
 
 .div-etoiles p {
@@ -305,13 +339,28 @@
   align-items: center;
   text-shadow: 0px 0px 4px rgb(180, 166, 166);
 }
+@media screen and (max-width: 600px) {
+  .div-etoiles p {
+    text-align: center;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+  }
+}
 
 .div-etoiles img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  margin-top: 15px;
+  margin-top: 30px;
   box-shadow: 0px 0px 8px rgb(175, 136, 136);
+}
+@media screen and (max-width: 600px) {
+  .div-etoiles img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .div-description {
@@ -323,6 +372,13 @@
   font-size: 28px;
   width: 120px;
   gap: 5px;
+}
+@media screen and (max-width: 600px) {
+  .stars {
+    width: auto;
+    justify-content: center;
+    font-size: 20px;
+  }
 }
 
 .span1 {
@@ -339,6 +395,13 @@
   gap: 2rem;
   margin-top: 15px;
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .collapseLogement {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 
 .carousel {
@@ -450,4 +513,15 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+/* Styles pour les téléphones */
+@media screen and (max-width: 600px) {
+  .header {
+    height: 30px;
+  }
+  .header img {
+    height: 55px;
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

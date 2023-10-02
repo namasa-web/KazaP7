@@ -14,12 +14,10 @@
   /* Supprime la marge et le rembourrage par défaut des listes */
   padding: 0;
   /* taille du texte a propos et acceuil */
-  font-size: 20px; 
+  font-size: 18px; 
   /* Ajoute un espacement horizontal entre les éléments */
-  gap: 100px; /* Ajustez l'espacement horizontal selon vos préférences */
-  
+  gap: 50px; /* Ajustez l'espacement horizontal selon vos préférences */ 
 }
-
 
 .nav_link li {
   display: inline;

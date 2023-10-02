@@ -1,4 +1,3 @@
-
 function Banner(props) {
   return (
     <div className="banner" style={{ backgroundImage: `url(${props.backgroundImage})` }}>

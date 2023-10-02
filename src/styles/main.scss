@@ -17,5 +17,15 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Styles pour les téléphones */
+@media screen and (max-width: 600px) {
+  .header {
+    height: 30px;
+    img {
+      height: 55px;
+      margin-left: 10px;
+    }
+  }
+}
 
 

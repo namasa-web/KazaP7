@@ -1,26 +1,31 @@
+
 /* Styles pour le conteneur de la bannière */
 .banner {
   position: relative;
-  height: 209px;
-  border-radius: 15px; /* Ajoute des coins arrondis */
+  height: 200px;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px 50px;
   padding: 20px;
   background-size: cover;
-  background-position: center; /* Pour couvrir tout le conteneur */
-  color: $tertiary-color; /* Couleur du texte */
-  text-align: center; /* Centre le texte horizontalement */
-}
+  background-position: center;
+  filter: brightness(0.9);
+  }
 
-/* Styles pour le texte de la bannière */
-.banner h1 {
-  font-size: 44px;
-}
+  h1.banner_title {
+    color: $tertiary-color;
+    font-size: 52px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(79, 75, 75);
+  }
 
-/* Si vous souhaitez ajouter un espacement entre le texte et le bord de la bannière */
-.banner h1 {
-  margin: 0 20px;
-}
+
+
+
+
+
+
+
 
