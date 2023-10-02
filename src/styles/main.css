@@ -41,15 +41,23 @@
   gap: 100px; /* Ajustez l'espacement horizontal selon vos préférences */
 }
 
-.nav_link a {
-  /* Définit la couleur du texte à la couleur de la variable primary-color */
-  color: #ff6060;
-  text-decoration: none;
+.nav_link li {
+  display: inline;
 }
 
-.nav_link a:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: #ff6060;
+.nav_link a {
+  text-decoration: none; /* Supprime la décoration par défaut des liens */
+  color: #ff6060; /* Couleur du texte des liens inactifs */
+  transition: border-bottom 0.3s ease; /* Transition pour le trait de décoration */
+}
+
+.nav_link a.active {
+  border-bottom: 2px solid #ff6060; /* Trait de décoration pour les liens actifs */
+  color: #ff6060; /* Couleur du texte des liens actifs */
+}
+
+.nav_link a:hover {
+  color: red; /* Couleur du texte au survol du lien inactif */
 }
 
 /* Styles pour le FOOTER */
@@ -132,7 +140,7 @@
   display: block;
   width: 100%;
   text-align: center;
-  margin-bottom: 2630px; /* Ajout de marge inférieure pour éviter le chevauchement avec le pied de page */
+  margin-bottom: 150px; /* Ajout de marge inférieure pour éviter le chevauchement avec le pied de page */
 }
 
 .not_found span {
@@ -228,7 +236,7 @@
   color: #ff6060;
   margin: 0;
   border-radius: 5px;
-  box-shadow: 0px 0px 20px rgb(193, 191, 191);
+  box-shadow: 0px 0px 9px rgb(197, 195, 195);
   z-index: -1; /* passe la zone de contenu sous la zone de titre*/
 }
 
@@ -239,8 +247,8 @@
 .logement {
   display: flex;
   flex-direction: column;
-  width: 93%;
-  margin-left: 50px;
+  width: calc(100% - 200px); /* La largeur est calculée en soustrayant 200px (100px à gauche et 100px à droite) */
+  margin: 0 100px; /* Ajoute une marge de 100px à gauche et à droite */
   height: 100%;
   margin-bottom: 100px;
 }
@@ -295,7 +303,7 @@
   width: 93px;
   height: 52px;
   align-items: center;
-  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+  text-shadow: 0px 0px 4px rgb(180, 166, 166);
 }
 
 .div-etoiles img {
@@ -303,7 +311,7 @@
   height: 64px;
   border-radius: 50%;
   margin-top: 15px;
-  box-shadow: 0px 0px 10px rgb(175, 136, 136);
+  box-shadow: 0px 0px 8px rgb(175, 136, 136);
 }
 
 .div-description {
@@ -436,7 +444,7 @@
 }
 
 .fiche-logement:hover {
-  box-shadow: 0px 0px 9px #473030;
+  box-shadow: 0px 0px 5px #4e3434;
   cursor: pointer;
 }
 

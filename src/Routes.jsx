@@ -1,6 +1,6 @@
 import React from 'react'
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Card from "./pages/Card"
@@ -11,21 +11,22 @@ import Footer from "./components/footer/Footer"
 
 
 // défini les routes, c'ette fonction est appelé dans index.js
-function Routes() {
-    const router = createBrowserRouter([
-        { path:"/", element:<Home />, errorElement:<NotFound /> },
-        { path: "/about", element: <About />, errorElement:<NotFound /> },
-        { path: "/logement", element: <Card />, errorElement:<NotFound />    },
-        { path: "*", element: <NotFound /> }  // toutes les routes non trouvées iront vers NotFound
-    ]);
-    ReactDOM.createRoot(document.getElementById("root")).render(
-        <React.StrictMode>
+const AppRoutes = () => {   
+
+    return (
+        <BrowserRouter>
             <Header />
-            <RouterProvider router={router} />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} /> 
+                <Route path="/logement" element={<Card />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
             <Footer />
-        </React.StrictMode>
+      </BrowserRouter>
+        
     );
         
 }
 
-export default Routes
+export default AppRoutes

@@ -20,15 +20,25 @@
   
 }
 
-.nav_link a {
-  /* Définit la couleur du texte à la couleur de la variable primary-color */
-  color: $primary-color;
-  text-decoration: none;
+
+.nav_link li {
+  display: inline;
 }
 
-.nav_link a:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: $primary-color;
+.nav_link a {
+  text-decoration: none; /* Supprime la décoration par défaut des liens */
+  color: $primary-color; /* Couleur du texte des liens inactifs */
+  transition: border-bottom 0.3s ease; /* Transition pour le trait de décoration */
 }
+
+.nav_link a.active {
+  border-bottom: 2px solid $primary-color; /* Trait de décoration pour les liens actifs */
+  color: $primary-color; /* Couleur du texte des liens actifs */
+}
+
+.nav_link a:hover {
+  color: red; /* Couleur du texte au survol du lien inactif */
+}
+
 
 
