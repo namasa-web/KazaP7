@@ -1,41 +1,40 @@
 .nav_link {
-  /* Positionne la barre de navigation en haut à droite de la fenêtre */
   position: absolute;
   top: 25px;
   right: 60px;
-  /* Lui donne une largeur minimale pour éviter que les éléments ne se chevauchent lorsque la fenêtre est réduite */
   min-width: 200px;
-  /* Affiche les éléments de la barre de navigation en ligne */
   display: flex;
-  /* Aligne les éléments de la barre de navigation verticalement */
   align-items: center;
-  /* Supprime les puces des liens de navigation */
   list-style: none;
-  /* Supprime la marge et le rembourrage par défaut des listes */
   padding: 0;
-  /* taille du texte a propos et acceuil */
   font-size: 18px; 
-  /* Ajoute un espacement horizontal entre les éléments */
-  gap: 50px; /* Ajustez l'espacement horizontal selon vos préférences */ 
-}
+  gap: 50px; 
 
+  @media screen and (max-width: 700px){
+    
+    gap: 15px;
+    justify-content: right;
+    margin: 20px -30px;
+    font-size: 16px;
+  }
+}
 .nav_link li {
   display: inline;
 }
 
 .nav_link a {
-  text-decoration: none; /* Supprime la décoration par défaut des liens */
-  color: $primary-color; /* Couleur du texte des liens inactifs */
-  transition: border-bottom 0.3s ease; /* Transition pour le trait de décoration */
+  text-decoration: none;
+  color: $primary-color; 
+  transition: border-bottom 0.3s ease; 
 }
 
 .nav_link a.active {
-  border-bottom: 2px solid $primary-color; /* Trait de décoration pour les liens actifs */
-  color: $primary-color; /* Couleur du texte des liens actifs */
+  border-bottom: 2px solid $primary-color; 
+  color: $primary-color; 
 }
 
 .nav_link a:hover {
-  color: red; /* Couleur du texte au survol du lien inactif */
+  color: red; 
 }
 
 

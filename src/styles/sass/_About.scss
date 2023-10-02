@@ -5,6 +5,10 @@
     padding-inline: 108px;
     margin-top: 15px;
     margin-bottom: 100px;
+    @media screen and (max-width: 700px)        {
+        padding-inline: 5px;
+        
+    }
 }
 
 .page_about {
