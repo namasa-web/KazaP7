@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import ErrorPage from '../pages/NotFound';
 import Collapse from '../components/collapse/Collapse';
 import Carousel from '../components/carousel/Carousel';
 import logements from '../Datas/logements.json';
@@ -20,10 +19,11 @@ function Card() {
     // Cherche l'appartement dans le fichier logements.json
     const logement = logements.find(element => element.id === idLogement);
 
-    // Si l'appartement n'existe pas, redirection vers la page d'erreur
+    /// Si l'appartement n'existe pas, rediriger vers la page d'erreur
     if (!logement) {
-      return <ErrorPage />;
+      return window.location.replace('/notfound');
     }
+
 
     // Si l'appartement existe, définit l'état avec les données de l'appartement
     setRecord(logement);
