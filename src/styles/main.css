@@ -5,9 +5,20 @@
   max-width: 100%;
   margin: 20px auto;
 }
+@media screen and (max-width: 600px) {
+  .header {
+    height: 20 px;
+  }
+}
 .header img {
   height: 100%;
   margin-left: 55px;
+}
+@media screen and (max-width: 600px) {
+  .header img {
+    height: 90%;
+    margin-left: 5px;
+  }
 }
 
 .nav_link {
@@ -21,6 +32,15 @@
   padding: 0;
   font-size: 18px;
   gap: 50px;
+}
+@media screen and (max-width: 600px) {
+  .nav_link {
+    gap: 10px;
+    justify-content: right;
+    right: 10px;
+    font-size: 15px;
+    top: 40px;
+  }
 }
 
 .nav_link li {
@@ -42,7 +62,6 @@
   color: red;
 }
 
-/* Styles pour le FOOTER */
 .footer {
   position: relative;
   bottom: 0;
@@ -53,32 +72,45 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 200px; /* Ajuste la hauteur automatique pour s'adapter au contenu */
-  padding: 0px; /* Ajoute une certaine marge intérieure pour l'espace */
+  height: 200px;
+  padding: 0px;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 150px;
+  }
+}
 
 /* Styles pour le logo */
 .footer img {
-  width: 130px; /* Ajuste la largeur du logo selon vos préférences */
-  /* Garantit que l'aspect ratio est maintenu */
+  width: 130px;
   margin-bottom: center;
 }
+@media screen and (max-width: 600px) {
+  .footer img {
+    width: 110px;
+  }
+}
 
-/* Styles pour le texte */
+/* Styles pour le texte du Footer*/
 .text_footer {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 10px; /* Ajoute une petite marge en haut pour l'espace */
   max-width: 100%; /* Limite la largeur du texte pour un aspect allongé */
 }
+@media screen and (max-width: 600px) {
+  .text_footer {
+    font-size: 1rem;
+  }
+}
 
-/* Styles pour le conteneur de la bannière */
 .banner {
   position: relative;
-  height: 200px;
+  height: 180px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -89,12 +121,22 @@
   background-position: center;
   filter: brightness(0.9);
 }
+@media screen and (max-width: 600px) {
+  .banner {
+    margin: 50px 0px;
+  }
+}
 
 h1.banner_title {
   color: #ffffff;
   font-size: 52px;
   text-align: center;
   text-shadow: 0px 0px 5px rgb(79, 75, 75);
+}
+@media screen and (max-width: 600px) {
+  h1.banner_title {
+    font-size: 30px;
+  }
 }
 
 .collapse_about {
@@ -105,11 +147,17 @@ h1.banner_title {
   margin-top: 15px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 600px) {
+  .collapse_about {
+    padding-inline: 0px;
+  }
+}
 
 .page_about {
   display: flex;
   width: 100%;
   height: 100%;
+  margin: 0px;
   flex-direction: column;
 }
 
@@ -118,47 +166,49 @@ h1.banner_title {
   display: block;
   width: 100%;
   text-align: center;
-  margin-bottom: 150px; /* Ajout de marge inférieure pour éviter le chevauchement avec le pied de page */
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 600px) {
+  .not_found {
+    margin-bottom: 100px;
+  }
 }
 
 .not_found span {
   font-size: 288px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold; /* Ajout de la propriété pour le texte en gras */
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .not_found span {
+    font-size: 120px;
+    margin: Center;
+  }
 }
 
 .not_found h4 {
   font-size: 36px;
-  margin: 30px 0;
+  margin: 20px 0px;
+}
+@media screen and (max-width: 600px) {
+  .not_found h4 {
+    font-size: 15px;
+    margin: 50px 50px;
+  }
 }
 
 .not_found p {
   padding-top: 50px;
+}
+@media screen and (max-width: 600px) {
+  .not_found p {
+    padding-top: auto;
+  }
 }
 
 .not_found a {
   color: #ff6060;
 }
 
-@media (min-width: 401px) and (max-width: 550px) {
-  .not_found span {
-    font-size: 180px;
-  }
-}
-@media (max-width: 400px) {
-  .not_found {
-    margin: auto 0;
-  }
-  .not_found span {
-    font-size: 96px;
-  }
-  .not_found h4 {
-    font-size: 18px;
-  }
-  .not_found a {
-    font-size: 14px;
-  }
-}
 .collapse {
   display: flex;
   flex-direction: column;
@@ -296,9 +346,9 @@ h1.banner_title {
   align-items: center;
   padding-inline: 20px;
   padding-bottom: 2px;
-  margin: 20px 20px 0 0;
+  margin: 15px 20px 0 0;
   height: 25px;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #ff6060;
   color: #ffffff;
   border-radius: 7px;
@@ -306,7 +356,7 @@ h1.banner_title {
 }
 @media screen and (max-width: 600px) {
   .tags {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -326,8 +376,8 @@ h1.banner_title {
   display: flex;
   text-align: right;
   font-size: 18px;
-  width: 93px;
-  height: 52px;
+  width: 100px;
+  height: 70px;
   align-items: center;
   text-shadow: 0px 0px 4px rgb(180, 166, 166);
 }
@@ -342,16 +392,17 @@ h1.banner_title {
 }
 
 .div-etoiles img {
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin-top: 30px;
+  margin-top: 20px;
   box-shadow: 0px 0px 8px rgb(175, 136, 136);
 }
 @media screen and (max-width: 600px) {
   .div-etoiles img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
   }
 }
 
@@ -361,9 +412,9 @@ h1.banner_title {
 
 .stars {
   display: flex;
-  font-size: 28px;
-  width: 120px;
-  gap: 5px;
+  font-size: 25px;
+  width: 100px;
+  gap: 10px;
 }
 @media screen and (max-width: 600px) {
   .stars {
@@ -402,6 +453,11 @@ h1.banner_title {
   width: 100%;
   margin-top: 30px;
 }
+@media screen and (max-width: 600px) {
+  .carousel {
+    height: 350px;
+  }
+}
 
 .carousel p {
   position: relative;
@@ -411,6 +467,12 @@ h1.banner_title {
   margin-top: 340px;
   text-align: center;
   text-shadow: 0px 0px 5px black;
+}
+@media screen and (max-width: 600px) {
+  .carousel p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
 }
 
 .classImage {
@@ -463,12 +525,20 @@ h1.banner_title {
   margin-bottom: 25px;
   border-radius: 25px;
 }
+@media screen and (max-width: 600px) {
+  .logements {
+    padding: 25px;
+    margin: 0px 0px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
 
 .logements a {
   text-decoration: none;
 }
 
-/* card logement */
+/* Card Logement */
 .fiche-logement {
   background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #8e3434);
   border-radius: 7px;
@@ -505,15 +575,4 @@ h1.banner_title {
 
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-/* Styles pour les téléphones */
-@media screen and (max-width: 600px) {
-  .header {
-    height: 30px;
-  }
-  .header img {
-    height: 55px;
-    margin-left: 10px;
-  }
 }/*# sourceMappingURL=main.css.map */
