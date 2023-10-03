@@ -1,15 +1,19 @@
- .header{
+ .header {
     height: 68px;
     max-width: 100%;
     margin: 20px auto;
+    @media screen and (max-width: 600px){
+        height: 20 px;
+         }
   
-    img{
+    img {
         height: 100%;
         margin-left: 55px;
         @media screen and (max-width: 600px){
            height: 20 px;
-            }
-            
+           margin-left: 5px;
         }
-       
+            
     }
+       
+}

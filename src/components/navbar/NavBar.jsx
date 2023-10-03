@@ -9,7 +9,7 @@ function NavBar() {
         <li className={window.location.pathname === "/" ? " active" : "notActive"}>Accueil</li>
         </NavLink>
         <NavLink to="/about">
-        <li className={window.location.pathname === "/about" ? " active" : "notActive"}>A propos</li>
+        <li className={window.location.pathname === "/about" ? " active" : "notActive"}>A Propos</li>
         </NavLink>
       </ul>
     </nav>

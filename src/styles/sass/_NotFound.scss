@@ -3,36 +3,38 @@
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 150px; /* Ajout de marge inférieure pour éviter le chevauchement avec le pied de page */
+    margin-bottom: 150px; 
+    @media screen and (max-width: 600px) { 
+      margin-bottom: 100px;
+ }
+ 
   }
   .not_found span {
     font-size: 288px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold; /* Ajout de la propriété pour le texte en gras */
-  }
-  
+    font-weight: bold;
+    @media screen and (max-width: 600px) {
+      font-size: 120px;
+      margin: Center;
+    } 
+ }
+ 
   .not_found h4 {
     font-size: 36px;
-    margin: 30px 0;
+    margin: 20px 0px;
+    @media screen and (max-width: 600px) {
+      font-size: 15px;
+      margin: 50px 50px;
+    }
   }
   
   .not_found p {
     padding-top: 50px;
+    @media screen and (max-width: 600px) {
+      padding-top: auto;
+    }
   }
   
   .not_found a {
     color: $primary-color;
     
   }
-
-
-@media (min-width: 401px) and (max-width: 550px) {
-    .not_found span { font-size: 180px; }
-}
-
-@media (max-width: 400px) {
-    .not_found {      margin: auto 0; }
-    .not_found span { font-size: 96px; }
-    .not_found h4 {   font-size: 18px; }
-    .not_found a {    font-size: 14px; }
-}

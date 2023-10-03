@@ -66,16 +66,16 @@
     align-items: center;
     padding-inline: 20px;
     padding-bottom: 2px;
-    margin: 20px 20px 0 0;
+    margin: 15px 20px 0 0;
     height: 25px;
-    font-size: 14px;
+    font-size: 15px;
     background-color: $primary-color;
     color: $tertiary-color;
     border-radius: 7px;
     white-space: nowrap;
   
     @media screen and (max-width: 600px) {
-      font-size: 13px;
+      font-size: 14px;
     }
   }
   
@@ -84,7 +84,6 @@
     gap: 10px;
     color: $primary-color;
     width: 167px;
-  
     @media screen and (max-width: 600px) {
       width: auto;
 
@@ -95,14 +94,13 @@
     display: flex;
     text-align: right;
     font-size: 18px;
-    width: 93px;
-    height: 52px;
+    width: 100px;
+    height: 70px;
     align-items: center;
     text-shadow: 0px 0px 4px rgb(180, 166, 166);
-  
     @media screen and (max-width: 600px) {
       text-align: center;
-     margin-left: auto;
+      margin-left: auto;
       width: auto;
       height: auto;
       font-size: 15px;
@@ -110,15 +108,15 @@
   }
   
   .div-etoiles img {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-top: 30px;
+    margin-top: 20px;
     box-shadow: 0px 0px 8px rgb(175, 136, 136);
-  
     @media screen and (max-width: 600px) {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
+      justify-content: center;
     }
   }
   
@@ -126,13 +124,11 @@
     width: 100%;
   }
   
-  //éloiles
   .stars {
     display: flex;
-    font-size: 28px;
-    width: 120px;
-    gap: 5px;
-  
+    font-size: 25px;
+    width: 100px;
+    gap: 10px;
     @media screen and (max-width: 600px) {
       width: auto;
       justify-content: center;
@@ -162,4 +158,4 @@
       align-items: center;
       margin-top: 20px;
     }
-  }
+}

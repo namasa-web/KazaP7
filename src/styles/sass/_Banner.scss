@@ -1,8 +1,6 @@
-
-/* Styles pour le conteneur de la bannière */
 .banner {
   position: relative;
-  height: 200px;
+  height: 180px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -12,11 +10,9 @@
   background-size: cover;
   background-position: center;
   filter: brightness(0.9);
-
-  @media screen and (max-width: 700px){
-    margin: 50px 30px;
-    padding: 0px;
-    }
+  @media screen and (max-width: 600px){
+    margin: 50px 0px;
+  }
 }
 
   h1.banner_title {
@@ -24,16 +20,7 @@
     font-size: 52px;
     text-align: center;
     text-shadow: 0px 0px 5px rgb(79, 75, 75);
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 600px){
       font-size: 30px;
       }
 }
-
-
-
-
-
-
-
-
-
