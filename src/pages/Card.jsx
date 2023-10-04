@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Collapse from '../components/collapse/Collapse';
 import Carousel from '../components/carousel/Carousel';
 import logements from '../Datas/logements.json';
@@ -9,6 +9,9 @@ const arrayStars = [1, 2, 3, 4, 5];
 function Card() {
   // Utilisation du hook useParams pour récupérer l'ID de l'URL
   const { id } = useParams();
+
+  // Utilisation du hook useNavigate pour gérer la navigation
+  const navigate = useNavigate();
 
   // Utilisation du hook useState pour gérer l'état du composant
   const [record, setRecord] = useState(null);
@@ -20,12 +23,12 @@ function Card() {
 
     /// Si l'appartement n'existe pas, rediriger vers la page d'erreur
     if (!logement) {
-      return window.location.replace('/notfound');
+      return navigate('/ErrorPage');
     }
 
     // Si l'appartement existe, définit l'état avec les données de l'appartement
     setRecord(logement);
-  }, [id]);
+  }, [id, navigate]);
 
   // Si les données de l'appartement ne sont pas encore disponibles, affiche un loader
   if (!record) {
