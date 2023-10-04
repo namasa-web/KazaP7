@@ -14,7 +14,7 @@ const Logements = () => {
                 // affiche la fiche logement sur la page d'accueil
                 return (
                     <div className="fiche-logement" key={id}>
-                        <Link to={{ pathname: "/Logement", search: "?_id="+id }}>
+                        <Link to={`/logement/${id}`}>
                             <img src={cover} alt={title} />
                             <h3>{title}</h3>
                         </Link>

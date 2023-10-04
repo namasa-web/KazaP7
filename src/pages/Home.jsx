@@ -7,11 +7,9 @@ import Logements from "../components/logements/Logements"; // Import du composan
 function Home() {
   return (
     <div className="home-page"> {/* Div principale de la page d'accueil */}
-  
       <Banner backgroundImage={ImageBanner} title="Chez vous, partout et ailleurs" /> {/* Composant de bannière avec image de fond et un titre */}
       <Logements /> {/* Composant de liste de logements */}
-     
-    </div>
+     </div>
   );
 }
 
