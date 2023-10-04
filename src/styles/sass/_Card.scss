@@ -1,161 +1,161 @@
 .logement {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 100%;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start; /* Alignez à gauche */
+  }
+}
+
+.ficheLogement {
+  display: flex;
+  margin-top: 30px;
+
+  @media screen and (max-width: 600px) {
     flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px; 
-    height: 100%;
-    margin-bottom: 100px;
-  
-    @media screen and (max-width: 1024px) {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+    align-items: flex-start; 
+    margin-bottom: 20px;
+  }
 
-    @media screen and (max-width: 600px) {
-      margin-left: 0;
-      margin-right: 0;
-      align-items: center;
-    }
+  @media screen and (max-width: 1024px) {
+    align-items: flex-start; 
   }
-  
-  .ficheLogement {
-    display: flex;
-    margin-top: 30px;
-  
-    @media screen and (max-width: 600px) {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-  
-    @media screen and (max-width: 1024px) {
-      align-items: center;
-    }
+}
+
+.ficheLogement h4 {
+  color: $primary-color;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.ficheLogement h1 {
+  color: $primary-color;
+  margin: 0;
+  font-size: 36px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
   }
-  
-  .ficheLogement h4 {
-    color: $primary-color;
-    margin-top: 10px;
-    font-size: 18px;
+}
+
+.div-tags {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap; /* Utilisez "wrap" pour empêcher le débordement */
+    justify-content: flex-start; /* Alignez à gauche */
   }
-  
-  .ficheLogement h1 {
-    color: $primary-color;
-    margin: 0;
-    font-size: 36px;
-  
-    @media screen and (max-width: 600px) {
-      font-size: 24px;
-    }
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  padding-bottom: 2px;
+  margin: 15px 20px 0 0;
+  height: 25px;
+  font-size: 15px;
+  background-color: $primary-color;
+  color: $tertiary-color;
+  border-radius: 7px;
+  white-space: nowrap;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+    padding-inline: 10px;
+    margin: 10px 5px 0 0;
+    justify-content: flex-start; /* Alignez à gauche */
   }
-  
-  .div-tags {
-    display: flex;
-    white-space: nowrap;
-    flex-wrap: wrap;
-  
-    @media screen and (max-width: 600px) {
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-    }
+}
+
+.div-etoiles {
+  display: flex;
+  gap: 10px;
+  color: $primary-color;
+  width: 167px;
+
+  @media screen and (max-width: 600px) {
+    width: 160px;
   }
-  
-  .tags {
-    display: flex;
-    align-items: center;
-    padding-inline: 20px;
-    padding-bottom: 2px;
-    margin: 15px 20px 0 0;
-    height: 25px;
+}
+
+.div-etoiles p {
+  display: flex;
+  text-align: right;
+  font-size: 18px;
+  width: 100px;
+  height: 70px;
+  align-items: center;
+  text-shadow: 0px 0px 4px rgb(180, 166, 166);
+
+  @media screen and (max-width: 600px) {
+    
+    width: auto;
+    height: auto;
     font-size: 15px;
-    background-color: $primary-color;
-    color: $tertiary-color;
-    border-radius: 7px;
-    white-space: nowrap;
-  
-    @media screen and (max-width: 600px) {
-      font-size: 14px;
-    }
-  }
-  
-  .div-etoiles {
-    display: flex;
-    gap: 10px;
-    color: $primary-color;
-    width: 167px;
-    @media screen and (max-width: 600px) {
-      width: auto;
+   }
+}
 
-    }
-  }
-  
-  .div-etoiles p {
-    display: flex;
-    text-align: right;
-    font-size: 18px;
-    width: 100px;
+.div-etoiles img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0px 0px 8px rgb(175, 136, 136);
+
+  @media screen and (max-width: 600px) {
+    width: 70px;
     height: 70px;
-    align-items: center;
-    text-shadow: 0px 0px 4px rgb(180, 166, 166);
-    @media screen and (max-width: 600px) {
-      text-align: center;
-      margin-left: auto;
-      width: auto;
-      height: auto;
-      font-size: 15px;
-    }
+    justify-content: center; 
   }
-  
-  .div-etoiles img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+}
+
+.div-description {
+  width: 100%;
+}
+
+.stars {
+  display: flex;
+  font-size: 25px;
+  width: 100px;
+  gap: 10px;
+
+  @media screen and (max-width: 600px) {
+    width: auto;
+    font-size: 20px;
+    gap: 5px;
+  }
+}
+
+/* Couleur des étoiles pleines */
+.span1 {
+  color: $primary-color;
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
+}
+
+/* Couleur des étoiles vides */
+.span2 {
+  color: rgb(230, 224, 224);
+}
+
+.collapseLogement {
+  display: flex;
+  gap: 2rem;
+  margin-top: 15px;
+  width: 100%;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start; 
     margin-top: 20px;
-    box-shadow: 0px 0px 8px rgb(175, 136, 136);
-    @media screen and (max-width: 600px) {
-      width: 70px;
-      height: 70px;
-      justify-content: center;
-    }
+    gap: 1rem;
   }
-  
-  .div-description {
-    width: 100%;
-  }
-  
-  .stars {
-    display: flex;
-    font-size: 25px;
-    width: 100px;
-    gap: 10px;
-    @media screen and (max-width: 600px) {
-      width: auto;
-      justify-content: center;
-      font-size: 20px;
-    }
-  }
-  
-  //couleur des étoiles pleines
-  .span1 {
-    color: $primary-color;
-    text-shadow: 0px 0px 5px rgb(180, 166, 166);
-  }
-  
-  //couleur des étoiles vides
-  .span2 {
-    color: rgb(230, 224, 224);
-  }
-  
-  .collapseLogement {
-    display: flex;
-    gap: 2rem;
-    margin-top: 15px;
-    width: 100%;
-  
-    @media screen and (max-width: 600px) {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
 }

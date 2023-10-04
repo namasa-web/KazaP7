@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  position: relative; /* Utilisation de position: absolute */
   bottom: 0;
   left: 0;
   right: 0;
@@ -15,6 +15,7 @@
   text-align: center;
   @media screen and (max-width: 600px) {
     height: 150px;
+    position: relative; 
   }
 }
 
@@ -31,7 +32,7 @@
 .text_footer {
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 10px; /* Ajoute une petite marge en haut pour l'espace */
+  margin-top: 10px;
   max-width: 100%; /* Limite la largeur du texte pour un aspect allongé */
   @media screen and (max-width: 600px) {
     font-size: 1rem;

@@ -1,40 +1,44 @@
 .not_found {
-    color: $primary-color;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 150px; 
-    @media screen and (max-width: 600px) { 
-      margin-bottom: 100px;
- }
- 
+  color: $primary-color;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  text-align: center;
+  margin-bottom: 150px; 
+  @media screen and (max-width: 600px) { 
+    margin-top: 150px;
+    margin-bottom: 300px;
   }
-  .not_found span {
-    font-size: 288px;
-    font-weight: bold;
-    @media screen and (max-width: 600px) {
-      font-size: 120px;
-      margin: Center;
-    } 
- }
- 
-  .not_found h4 {
-    font-size: 36px;
-    margin: 20px 0px;
-    @media screen and (max-width: 600px) {
-      font-size: 15px;
-      margin: 50px 50px;
-    }
+}
+
+.not_found span {
+  font-size: 288px;
+  font-weight: bold;
+  margin: 0;
+  @media screen and (max-width: 600px) {
+    font-size: 120px;
+  } 
+}
+
+.not_found h4 {
+  font-size: 36px;
+  margin: 10px 0px; 
+  @media screen and (max-width: 600px) {
+    font-size: 15px;
+    margin: 0px 0px; 
   }
-  
-  .not_found p {
-    padding-top: 50px;
-    @media screen and (max-width: 600px) {
-      padding-top: auto;
-    }
+}
+
+.not_found p {
+  padding-top: 20px; 
+  margin: 0; 
+  @media screen and (max-width: 600px) {
+    padding-top: 30px; 
   }
-  
-  .not_found a {
-    color: $primary-color;
-    
-  }
+}
+
+.not_found a {
+  color: $primary-color;
+}

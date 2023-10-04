@@ -16,7 +16,7 @@
 }
 @media screen and (max-width: 600px) {
   .header img {
-    height: 90%;
+    height: 80%;
     margin-left: 5px;
   }
 }
@@ -35,11 +35,20 @@
 }
 @media screen and (max-width: 600px) {
   .nav_link {
+    gap: 15px;
+    justify-content: right;
+    right: 10px;
+    font-size: 17px;
+    top: 25px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .nav_link {
     gap: 10px;
     justify-content: right;
     right: 10px;
     font-size: 15px;
-    top: 40px;
+    top: 80px;
   }
 }
 
@@ -63,7 +72,7 @@
 }
 
 .footer {
-  position: relative;
+  position: relative; /* Utilisation de position: absolute */
   bottom: 0;
   left: 0;
   right: 0;
@@ -81,6 +90,7 @@
 @media screen and (max-width: 600px) {
   .footer {
     height: 150px;
+    position: relative;
   }
 }
 
@@ -99,7 +109,7 @@
 .text_footer {
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 10px; /* Ajoute une petite marge en haut pour l'espace */
+  margin-top: 10px;
   max-width: 100%; /* Limite la largeur du texte pour un aspect allongé */
 }
 @media screen and (max-width: 600px) {
@@ -119,7 +129,7 @@
   padding: 20px;
   background-size: cover;
   background-position: center;
-  filter: brightness(0.9);
+  border-radius: 25px;
 }
 @media screen and (max-width: 600px) {
   .banner {
@@ -127,11 +137,27 @@
   }
 }
 
+.banner_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/BackgroundFilter.png");
+  background-size: cover;
+  border-radius: 25px;
+}
+@media screen and (max-width: 600px) {
+  .banner_filter {
+    border-radius: 25px;
+  }
+}
+
 h1.banner_title {
   color: #ffffff;
   font-size: 52px;
   text-align: center;
-  text-shadow: 0px 0px 5px rgb(79, 75, 75);
+  z-index: 1;
 }
 @media screen and (max-width: 600px) {
   h1.banner_title {
@@ -163,45 +189,50 @@ h1.banner_title {
 
 .not_found {
   color: #ff6060;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   text-align: center;
   margin-bottom: 150px;
 }
 @media screen and (max-width: 600px) {
   .not_found {
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 300px;
   }
 }
 
 .not_found span {
   font-size: 288px;
   font-weight: bold;
+  margin: 0;
 }
 @media screen and (max-width: 600px) {
   .not_found span {
     font-size: 120px;
-    margin: Center;
   }
 }
 
 .not_found h4 {
   font-size: 36px;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 @media screen and (max-width: 600px) {
   .not_found h4 {
     font-size: 15px;
-    margin: 50px 50px;
+    margin: 0px 0px;
   }
 }
 
 .not_found p {
-  padding-top: 50px;
+  padding-top: 20px;
+  margin: 0;
 }
 @media screen and (max-width: 600px) {
   .not_found p {
-    padding-top: auto;
+    padding-top: 30px;
   }
 }
 
@@ -265,7 +296,7 @@ h1.banner_title {
   margin: 0;
   border-radius: 5px;
   box-shadow: 0px 0px 9px rgb(197, 195, 195);
-  z-index: -1; /* passe la zone de contenu sous la zone de titre*/
+  z-index: -1;
 }
 
 .equipement-content {
@@ -280,17 +311,11 @@ h1.banner_title {
   height: 100%;
   margin-bottom: 100px;
 }
-@media screen and (max-width: 1024px) {
-  .logement {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
 @media screen and (max-width: 600px) {
   .logement {
     margin-left: 0;
     margin-right: 0;
-    align-items: center;
+    align-items: flex-start; /* Alignez à gauche */
   }
 }
 
@@ -301,13 +326,13 @@ h1.banner_title {
 @media screen and (max-width: 600px) {
   .ficheLogement {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 1024px) {
   .ficheLogement {
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -335,9 +360,8 @@ h1.banner_title {
 }
 @media screen and (max-width: 600px) {
   .div-tags {
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap; /* Utilisez "wrap" pour empêcher le débordement */
+    justify-content: flex-start; /* Alignez à gauche */
   }
 }
 
@@ -356,7 +380,10 @@ h1.banner_title {
 }
 @media screen and (max-width: 600px) {
   .tags {
-    font-size: 14px;
+    font-size: 12px;
+    padding-inline: 10px;
+    margin: 10px 5px 0 0;
+    justify-content: flex-start; /* Alignez à gauche */
   }
 }
 
@@ -368,7 +395,7 @@ h1.banner_title {
 }
 @media screen and (max-width: 600px) {
   .div-etoiles {
-    width: auto;
+    width: 160px;
   }
 }
 
@@ -383,8 +410,6 @@ h1.banner_title {
 }
 @media screen and (max-width: 600px) {
   .div-etoiles p {
-    text-align: center;
-    margin-left: auto;
     width: auto;
     height: auto;
     font-size: 15px;
@@ -419,16 +444,18 @@ h1.banner_title {
 @media screen and (max-width: 600px) {
   .stars {
     width: auto;
-    justify-content: center;
     font-size: 20px;
+    gap: 5px;
   }
 }
 
+/* Couleur des étoiles pleines */
 .span1 {
   color: #ff6060;
   text-shadow: 0px 0px 5px rgb(180, 166, 166);
 }
 
+/* Couleur des étoiles vides */
 .span2 {
   color: rgb(230, 224, 224);
 }
@@ -442,8 +469,9 @@ h1.banner_title {
 @media screen and (max-width: 600px) {
   .collapseLogement {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 20px;
+    gap: 1rem;
   }
 }
 
@@ -470,8 +498,7 @@ h1.banner_title {
 }
 @media screen and (max-width: 600px) {
   .carousel p {
-    font-size: 15px;
-    margin-top: 5px;
+    display: none;
   }
 }
 
@@ -513,6 +540,15 @@ h1.banner_title {
   left: calc(100% - 70px);
 }
 
+/* Media query pour réduire les chevrons à partir de 600px */
+@media screen and (max-width: 600px) {
+  .classChevronGauche {
+    left: 10px; /* Ajustez la nouvelle position si nécessaire */
+  }
+  .classChevronDroit {
+    left: calc(100% - 60px); /* Ajustez la nouvelle position si nécessaire */
+  }
+}
 .logements {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -527,10 +563,8 @@ h1.banner_title {
 }
 @media screen and (max-width: 600px) {
   .logements {
-    padding: 25px;
-    margin: 0px 0px;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    padding: 0px;
+    margin: 30px 0px;
   }
 }
 
@@ -541,7 +575,7 @@ h1.banner_title {
 /* Card Logement */
 .fiche-logement {
   background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #8e3434);
-  border-radius: 7px;
+  border-radius: 8px;
   transition: 0.3s;
   min-width: 280px;
   width: 100%;
