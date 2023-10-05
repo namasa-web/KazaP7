@@ -1,14 +1,14 @@
-import React from 'react'; // Import de React
-import Banner from "../components/banner/Banner"; // Import du composant de bannière
-import ImageBanner from "../assets/backgroundHome.jpg"; // Import de l'image de fond
-import Logements from "../components/logements/Logements"; // Import du composant de logements
+import React from 'react'; 
+import Banner from "../components/banner/Banner"; 
+import ImageBanner from "../assets/backgroundHome.jpg"; 
+import Logements from "../components/logements/Logements"; 
 
 
 function Home() {
   return (
     <div className="home-page"> {/* Div principale de la page d'accueil */}
-      <Banner backgroundImage={ImageBanner} title="Chez vous, partout et ailleurs" /> {/* Composant de bannière avec image de fond et un titre */}
-      <Logements /> {/* Composant de liste de logements */}
+      <Banner backgroundImage={ImageBanner} title="Chez vous, partout et ailleurs" /> {/* Composant de bannière avec image de fond et le titre */}
+      <Logements /> {/* Composant de liste des logements */}
      </div>
   );
 }
